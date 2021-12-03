@@ -3965,22 +3965,12 @@ pre code {
     box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
 }
 
-.form-control::-webkit-input-placeholder {
-    color: #858796;
-    opacity: 1;
-}
-
 .form-control::-moz-placeholder {
     color: #858796;
     opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #858796;
-    opacity: 1;
-}
-
-.form-control::-ms-input-placeholder {
     color: #858796;
     opacity: 1;
 }
@@ -6020,6 +6010,8 @@ input[type="button"].btn-block {
     background-color: #4e73df;
     border: 0;
     border-radius: 1rem;
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
     -webkit-appearance: none;
@@ -6028,6 +6020,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
     .custom-range::-webkit-slider-thumb {
+        -webkit-transition: none;
         transition: none;
     }
 }
@@ -6052,6 +6045,8 @@ input[type="button"].btn-block {
     background-color: #4e73df;
     border: 0;
     border-radius: 1rem;
+    -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
@@ -6060,6 +6055,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
     .custom-range::-moz-range-thumb {
+        -moz-transition: none;
         transition: none;
     }
 }
@@ -6087,6 +6083,8 @@ input[type="button"].btn-block {
     background-color: #4e73df;
     border: 0;
     border-radius: 1rem;
+    -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
     appearance: none;
@@ -6094,6 +6092,7 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
     .custom-range::-ms-thumb {
+        -ms-transition: none;
         transition: none;
     }
 }
@@ -14110,6 +14109,16 @@ body.sidebar-toggled footer.sticky-footer {
     text-align: center;
 }
 
+input::-moz-placeholder {
+    font-size: var(--tamañoLetraInput);
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+    font-size: var(--tamañoLetraInput);
+    font-style: italic;
+}
+
 input::placeholder {
     font-size: var(--tamañoLetraInput);
     font-style: italic;
@@ -14127,6 +14136,8 @@ input::placeholder {
 .card-title {
     background-color: var(--shimaAmarillo);
     color: white;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 0;
     text-align: center;
@@ -14209,27 +14220,20 @@ td:hover {
 }
 
 .center {
-    text-align-last: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
 }
 
 .fotoImage {
     cursor: pointer;
-    -webkit-transition: all 0.9s ease;
     /* Safari y Chrome */
-    -moz-transition: all 0.9s ease;
     /* Firefox */
-    -o-transition: all 0.9s ease;
     /* IE 9 */
-    -ms-transition: all 0.9s ease;
     /* Opera */
     transition: all 0.9s ease;
 }
 
 .fotoImage:hover {
-    -webkit-transform: scale(5);
-    -moz-transform: scale(5);
-    -ms-transform: scale(5);
-    -o-transform: scale(5);
     transform: scale(5);
 }
 
@@ -14253,8 +14257,6 @@ div #filaBotones.row.form-group {
     justify-content: center;
     height: calc(90% - 5px);
     margin: 5px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
     background-color: var(--shimaMoraDark);
     color: white;
@@ -14994,6 +14996,7 @@ table ::-webkit-scrollbar-thumb:active {
     font-size: 20px;
 
 }
+
 
 
 

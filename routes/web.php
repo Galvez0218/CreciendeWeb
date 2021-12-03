@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PrincipalController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::GET('/', 'IndexController@Welcome');
+//---------------------------------RUTAS CON ZIGGY-------------------------------
+Route::GET('/', [PrincipalController::class, 'Welcome'])->name('prin.welcome');
