@@ -22,3 +22,5 @@ use App\Http\Controllers\PrincipalController;
 Route::GET('/', 'IndexController@Welcome');
 //---------------------------------RUTAS CON ZIGGY-------------------------------
 Route::GET('/', [PrincipalController::class, 'Welcome'])->name('prin.welcome');
+Route::GET('/registro', [PrincipalController::class, 'Registro'])->name('prin.registro');
+Route::GET('/registro/guardar', [PrincipalController::class, 'guardar_usuario'])->name('registrar.guardar_usuario');

@@ -1,6 +1,8 @@
 <?php
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class PrincipalController extends Controller
 {
     public function Welcome()
@@ -18,4 +20,12 @@ class PrincipalController extends Controller
     return view('welcome'/*, compact('origenes', 'orders')*/);
     }
 
+    public function Registro()
+    {
+    return view('Registro'/*, compact('origenes', 'orders')*/);
+    }
+
+    public function guardar_usuario(Request $request){
+        dd($request);
+    }
 }

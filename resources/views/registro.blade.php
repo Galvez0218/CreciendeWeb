@@ -102,27 +102,82 @@
     
 
     <section class="programa">
-        <!-- <div class="contenedor-video"> -->
-        <!-- <video autoplay loop poster="images/contenedor.jpg"> -->
-        <!-- <source src="images/contenedor2.jpg"> -->
-        <!-- <source src="video/video.webm" type="video/webm">
-                <source src="video/video.ogv" type="video/ogg"> -->
-        <!-- </video> -->
-        <!-- <img src="images/contenedor2.jpg" alt=""> -->
-        <video autoplay loop poster="images/contenedor3.jpg"></video>
+    <div class="col-md-6 login-form-2">
+                <form action="{{ route('registrar.guardar_usuario') }}" method="post" autocomplete="off">
+                    {{csrf_field()}}
+                    <h3 class="register-heading">REGISTRARSE</h3>
+
+                    <div class="col register-content">
+
+                        <div class="row form-group">
+                            <img src="images/login/userIcon.svg" class="iconosLogin" />
+                        </div>
+
+                        <div class="row form-group">
+                            <input type="text" name="nombres" autocomplete="nope" class="form-control"  placeholder="Nombres Completos" spellcheck="false" id="txtInputs" />
+                        </div>
+                        <div class="row form-group">
+                            <input type="text" name="apellidoPaterno" class="form-control" placeholder="Apellido Paterno" spellcheck="false" id="txtInputs" />
+                        </div>
+
+                        <div class="row form-group">
+                            <input type="text" name="apellidoMaterno" autocomplete="nope" class="form-control" placeholder="Apellido Materno" spellcheck="false" id="txtInputs" />
+                        </div>
+                        <div class="row form-group">
+                            <input type="number" name="dni" maxlength="8" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" placeholder="Documento de Identidad" spellcheck="false" id="txtInputs" />
+                        </div>
+                        <div class="row form-group">
+                            <input type="text" name="email" class="form-control" placeholder="E-mail" spellcheck="false" id="txtInputs" />
+                        </div>
+
+                        <div class="row form-group">
+                            <img src="images/login/passwordIcon.svg" class="iconosLogin" />
+
+
+
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="input-group" id="show_hide_password">
+
+                                <input type="password" name="clave" class="form-control" placeholder="Contraseña" spellcheck="false" id="txtContraseña" />
+
+                                <div class="input-group-append">
+                                    <span class="input-group-text input-password-hide" style="cursor: pointer;" id="btnVerContraseña">
+                                        <i class="fa fa-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="row form-group">
+                            <button type="button" class="btn btn-link" id="tienes_cuenta"> <a href="#">¿Ya tiene una cuenta?</a></button>
+                        </div> -->
+
+                        <div class="row form-group">
+                            <button type="submit" class="btn btn-primary" id="btnEntrar">REGISTRARSE</button>
+                        </div>
+
+                        <div class="row form-group">
+                            <p class="copyright">&copy; 2021 GTAWEBDEV</p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        <!-- <video autoplay loop poster="images/contenedor3.jpg"></video> -->
         </div>
 
     </section>
     <!--.programa-->
 
     <!-- START .destinos -->
-    <section class="invitados contenedor seccion">
+    <!-- <section class="invitados contenedor seccion">
 
-            <a  class="invitados contenedor seccion" href="{{route('prin.registro')}}">QUIERO EL CURSO</a>
+            <a  class="invitados contenedor seccion" href="#">QUIERO EL CURSO</a>
 
-
-        <!-- END lista-invitados -->
-    </section>
+    </section> -->
     <!-- END .invitados -->
 
     <footer class="site-footer">

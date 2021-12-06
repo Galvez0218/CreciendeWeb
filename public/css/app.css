@@ -36,7 +36,7 @@
     --shimaMora: #682584;
     --shimaPlomo: #9B979F;
     --shimaAmarillo: #FFBD11;
-    --shimaMoraDark:#24142b;
+    --shimaMoraDark:#1c1769;
 }
 
    html {
@@ -420,7 +420,7 @@ h1.nombre-sitio {
 
 /** Barra **/
 div.barra {
-    background-color: var(--shimaMoraDark);
+    background-color: #1e2c7a;
     padding: 20px 0;
 }
 .fixed {
@@ -861,7 +861,7 @@ div.cuenta-regresiva ul li {
 /** Footer **/
 
 footer {
-    background-color: #353535;
+    background-color: #1e2c7a;
     padding-top: 40px;
     margin-top: 0;
 }
