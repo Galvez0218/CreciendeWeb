@@ -36,7 +36,7 @@
     --shimaMora: #682584;
     --shimaPlomo: #9B979F;
     --shimaAmarillo: #FFBD11;
-    --shimaMoraDark:#1c1769;
+    --shimaMoraDark:#6A0F81;
 }
 
    html {
@@ -195,7 +195,7 @@ h2::after {
 }
 h3 {
     font-size: 1.8em;
-    color: #fe4918;
+    color: #5A09DF;
     font-family: "PT Sans", sans-serif;
     margin: 0;
 }
@@ -420,7 +420,7 @@ h1.nombre-sitio {
 
 /** Barra **/
 div.barra {
-    background-color: #1e2c7a;
+    background-color: #6A0F81;
     padding: 20px 0;
 }
 .fixed {
@@ -861,7 +861,7 @@ div.cuenta-regresiva ul li {
 /** Footer **/
 
 footer {
-    background-color: #1e2c7a;
+    background-color: #6A0F81;
     padding-top: 40px;
     margin-top: 0;
 }
@@ -4521,8 +4521,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #244b9a;
-    border-color: #4e73df;
+    background-color: #6A0F81;
+    border-color: #5506E0;
 }
 
 .btn-primary:hover {
