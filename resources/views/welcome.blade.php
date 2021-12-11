@@ -78,7 +78,7 @@
         <div class="contenedor clearfix">
             <div class="logo">
                 <a href="{{route('prin.welcome')}}">
-                    <img src="images/logo7.png" >
+                    <img src="images/logo_8.png" >
                 </a>
             </div>
 
@@ -118,7 +118,7 @@
     <!-- START .destinos -->
     <section class="invitados contenedor seccion">
 
-            <a  class="invitados contenedor seccion" href="{{route('prin.registro')}}">QUIERO EL CURSO</a>
+            <button  class="btn btn-primary" onclick="window.location.href='/registro'">QUIERO EL CURSO</button>
 
 
         <!-- END lista-invitados -->

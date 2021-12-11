@@ -78,7 +78,7 @@
         <div class="contenedor clearfix">
             <div class="logo">
                 <a href="{{route('prin.welcome')}}">
-                    <img src="images/creciende_logo_blanco.png">
+                    <img src="images/logo_8.png">
                 </a>
             </div>
 
