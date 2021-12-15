@@ -289,17 +289,18 @@ h1.nombre-sitio span {
 /** Header **/
 
 div.hero {
-    background-image: url(/images/portada_fb.png);
-    height: 600px;
+    background-image: url(/images/portada_fb2.png);
+    /* height: 550px; */
     width: 100%;
     background-position: top center;
     background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
-    /* div.hero {
-        height: 100vh;
-    } */
+    div.hero {
+        height: 580px;
+        width: 100%;
+    }
 }
 
 div.contenido-header {
@@ -420,7 +421,7 @@ h1.nombre-sitio {
 
 /** Barra **/
 div.barra {
-    background-color: #6A0F81;
+    background-color: #5506E0;
     padding: 20px 0;
 }
 .fixed {
@@ -861,7 +862,7 @@ div.cuenta-regresiva ul li {
 /** Footer **/
 
 footer {
-    background-color: #6A0F81;
+    background-color: #5506E0;
     padding-top: 40px;
     margin-top: 0;
 }
@@ -4531,7 +4532,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #6A0F81;
+    background-color: #5506E0;
     border-color: #5506E0;
 }
 

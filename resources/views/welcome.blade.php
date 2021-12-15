@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial">
     <!-- Icono -->
     <link rel="icon" href="{{asset('/icon.png')}}" type="image/png" />
     <!-- Place favicon.ico in the root directory -->
@@ -59,10 +59,7 @@
         <div class="hero">
             <div class="contenido-header">
                 <nav class="redes-sociales">
-                    <a href="https://www.facebook.com/TurismoShima"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/Creciende-100317412386236/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </ul>
                 </nav>
@@ -77,8 +74,8 @@
     <div class="barra">
         <div class="contenedor clearfix">
             <div class="logo">
-                <a href="{{route('prin.welcome')}}">
-                    <img src="images/logo_8.png" >
+                <a style="margin-left: 400px;" href="{{route('prin.welcome')}}">
+                    <img src="images/logo_8.png">
                 </a>
             </div>
 
@@ -99,21 +96,6 @@
     </div>
     <!--.barra-->
 
-    
-
-    <section class="programa">
-        <!-- <div class="contenedor-video"> -->
-        <!-- <video autoplay loop poster="images/contenedor.jpg"> -->
-        <!-- <source src="images/contenedor2.jpg"> -->
-        <!-- <source src="video/video.webm" type="video/webm">
-                <source src="video/video.ogv" type="video/ogg"> -->
-        <!-- </video> -->
-        <!-- <img src="images/contenedor2.jpg" alt=""> -->
-        <video autoplay loop poster="images/contenedor3.jpg"></video>
-        </div>
-
-    </section>
-    <!--.programa-->
 
     <!-- START .destinos -->
     <section class="invitados contenedor seccion">
@@ -126,7 +108,7 @@
     <!-- END .invitados -->
 
     <footer class="site-footer">
-        <div class="contenedor clearfix">
+        <!-- <div class="contenedor clearfix">
             <div class="footer-informacion">
                 <h3>Sobre <span>Creciende</span></h3>
                 <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex
@@ -147,7 +129,7 @@
                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </nav>
             </div>
-        </div>
+        </div> -->
 
         <p class="copyright">
             Todos los derechos Reservados a Creciende 2021.

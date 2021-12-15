@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 use App\Models\Usuario;
 
@@ -10,17 +11,8 @@ class PrincipalController extends Controller
 {
     public function Welcome()
     {
-        // dd(session()->all());
-        // $origenes = Origen::select('id', 'nombre_origen')
-        //     ->get();
-        // $orders = Order::all();
-        // dd($orders);
-
-        session()->forget('usuario_dni');
-        session()->forget('email');
-        session()->forget('clave');
         session()->forget('nombres');
-        return view('welcome'/*, compact('origenes', 'orders')*/);
+        return view('welcome');
     }
 
     public function Registro()
@@ -40,7 +32,8 @@ class PrincipalController extends Controller
             'celular' => $celular,
             'email' => $email,
         ));
-
+        // $wsp="https://bit.ly/import-gratis";
+        Session::flash('wsp', 'registro completo');
         return redirect()->route('prin.registro');
     }
 }
