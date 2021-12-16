@@ -290,15 +290,15 @@ h1.nombre-sitio span {
 
 div.hero {
     background-image: url(/images/portada_fb2.png);
-    /* height: 550px; */
+    height: 580px;
     width: 100%;
     background-position: top center;
     background-size: cover;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     div.hero {
-        height: 580px;
+        height: 515px;
         width: 100%;
     }
 }

@@ -91,24 +91,24 @@
 
 
 
-    <section class="programa" style="margin-left: 500px;">
-        <div class="col-md-6 login-form-2">
+    <section class="programa" style="margin-left: 430px; justify-content:center;" >
+        <div class="col-md-6 login-form-2" >
             <form action="{{ route('registrar.guardar_usuario') }}" method="post" autocomplete="off">
                 {{csrf_field()}}
-                <h3 class="register-heading">SEPARA GRATIS TU CUPO AQUI</h3>
+                <h3 style="text-align: center;" class="register-heading">SEPARA GRATIS TU CUPO AQUI</h3>
 
                 <div class="col register-content">
-                    <div class="row form-group">
+                    <div class="row form-group" style="justify-content: center">
                         <input style="max-width:300px;" type="text" required name="nombres" autocomplete="nope" class="form-control" placeholder="Nombres Completos" spellcheck="false" id="txtInputs" />
                     </div>
 
-                    <div class="row form-group">
+                    <div class="row form-group" style="justify-content: center">
                         <input style="max-width:300px;" type="number" required name="celular" maxlength="9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" placeholder="N° de celular" spellcheck="false" id="txtInputs" />
                     </div>
-                    <div class="row form-group">
+                    <div class="row form-group" style="justify-content: center">
                         <input style="max-width:300px;" type="text" required name="email" class="form-control" placeholder="Ingrese su correo electronico" spellcheck="false" id="txtInputs" />
                     </div>
-                    <div class="row form-group">
+                    <div class="row form-group" style="justify-content: center"> 
                         <button type="submit" class="btn btn-primary" id="btnEntrar">QUIERO PARTICIPAR
 
                         </button>
